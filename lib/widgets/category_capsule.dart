@@ -11,9 +11,12 @@ class CategoryCapsule extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 8, vertical:  8),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15),
-        color: Colors.grey.shade900 
+        color: Theme.of(context).colorScheme.primary.withOpacity(0.2),
+      
       ),
+      
       child: Text(title,style: TextStyle(fontSize: 14,fontWeight: FontWeight.w500),),
     );
+  
   }
 }
